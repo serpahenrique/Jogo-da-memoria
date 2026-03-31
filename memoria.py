@@ -67,6 +67,15 @@ def faz_aposta(num):
         apostas[x][y] = jogo[x][y]
         return x, y
 
+def verifica_tabuleiro():
+    faltam = 0
+    for i in range(4):
+        for j in range(4):
+            if apostas[i][j] == "♦️":
+                faltam +- 1
+    return faltam
+
+
 ############################################################################
 acertos = 0
 tentativas = 0
